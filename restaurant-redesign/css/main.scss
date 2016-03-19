@@ -2,6 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$bg-color: #fff;
 $body-font: "source-sans-pro",sans-serif;
 $open: #bada55;
 $primary-color: #5a2a24;
@@ -39,6 +40,8 @@ HEADER
 */
 
 .site-header {
+	background: $bg-color;
+	width: 100%;
 
 	.logo {
 		border: 2px solid $primary-color;
@@ -71,6 +74,7 @@ HEADER
 	nav {
 		border-top: 2px solid $primary-color;
 		border-bottom: 2px solid $primary-color;
+		font-size: 1.25rem;
 		overflow: hidden;
 		
 		ul {
@@ -130,7 +134,33 @@ BANNER
 	}
 }
 
+/*
+==============
+OPEN/CLOSE
+==============
+*/
 
+.open-close {
+		border-top: 2px solid $primary-color;
+		border-bottom: 2px solid $primary-color;
+		margin-bottom: 0.5rem;
+		padding: 0.5rem 0;
+		text-align: center;
+
+		.dot {
+			background: $open;
+			border-radius: 50%;
+			display: inline-block;
+			height: 0.75rem;
+			width: 0.75rem;
+			vertical-align: middle;
+		}
+
+		span {
+			font-size: 1.25rem;
+			text-decoration: underline;
+		}
+}
 
 
 
