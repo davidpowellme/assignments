@@ -1,21 +1,49 @@
 ---
 layout: default
+title: Home
 ---
+<section class="banner">
+	<div class="jumbo-text">
+		<h1>Handmade Ravioli</h1>
+		<h2>Made with love daily</h2>
+	</div>
 
-<div>
-
-  <h1>Posts</h1>
-
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+</section>
+<section class="specials">
+	<h1>Specials</h1>
+	<article class="spec-item">
+		<img src="#" alt="special-1">
+		<h2>Mushroom Ravioli <span>9</span></h2>
+		<p>Sapiente qui chartreuse taxidermy. Single-origin coffee bespoke bitters hammock everyday carry four dollar toast. </p>
+	</article>
+	<article class="spec-item">
+		<img src="#" alt="special-1">
+		<h2>Barrel-Aged Ravioli <span>9</span></h2>
+		<p>Sapiente qui chartreuse taxidermy. Single-origin coffee bespoke bitters hammock everyday carry four dollar toast. </p>
+	</article>
+</section>
+<section class="xtra">
+	<article>
+		<i class="fa"></i> Yes, we're BYOB
+	</article>
+	<article>
+		<i class="fa"></i> Yes, we take credit cards
+	</article>
+</section>
+<section class="hours">
+	<h1>Hours</h1>
+	<h2>Open Mon - Sat</h2>
+	<h2>Noon - 10PM</h2>
+	<h2>Open Sun</h2>
+	<h2>3PM - 8PM</h2>
+</section>
+<section class="location">
+	<article>
+		<h1>Location</h1>
+		<h2>1502 S First Street<br>Austin, TX 78704</h2>
+		(512)-364-9752<br><a href="mailto:info@regalravioli.com">info@regalravioli.com</a>
+	</article>
+	<article>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.544111562737!2d-97.75772598488005!3d30.25007448180796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b4e60a4dac1b%3A0x22396b919419af7e!2sRegal+Ravioli!5e0!3m2!1sen!2sus!4v1458418153074" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</article>
+</section>
