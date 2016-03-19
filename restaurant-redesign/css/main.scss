@@ -6,15 +6,24 @@ $body-font: "source-sans-pro",sans-serif;
 $open: #bada55;
 $primary-color: #5a2a24;
 
+* {
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 16px;
 	color: $primary-color;
+}
+
+img {
+	max-width: 100%;
 }
 
 h1,
 .logo {
 	font-size: 3rem;
 	font-weight: 600;
+	text-align: center;
 }
 h2 {
 	font-size: 1.5rem;
@@ -23,6 +32,11 @@ h2 {
 	text-transform: uppercase;
 }
 
+/*
+==============
+HEADER
+==============
+*/
 
 .site-header {
 
@@ -30,13 +44,14 @@ h2 {
 		border: 2px solid $primary-color;
 		color: $primary-color;
 		display: block;
-		margin: 0.5rem auto;
+		margin: 0.5rem auto 1rem auto;
 		padding: 0.5rem 1rem;
 		text-align: center;
 		text-decoration: none;
-		width: 20rem;
+		width: 23rem;
 	}
 	.open-close {
+		display: none;
 		margin-bottom: 0.5rem;
 		text-align: center;
 
@@ -79,3 +94,54 @@ h2 {
 		}	
 	}
 }
+
+/*
+==============
+BANNER
+==============
+*/
+
+.banner {
+	background: url(/images/hero-pasta.jpg) 0 0 no-repeat;
+	background-size: cover;
+	padding: 3rem 0;
+	position: relative;
+	width: 100%;
+	z-index: -1;
+	
+	&:after {
+		content: " ";
+		background: #000;
+		height: 100%;
+		left: 0;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: -1;
+	}
+
+	h1,
+	h2 {
+		color: #fff;
+		opacity: 1;
+		text-align: center;
+		z-index: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
