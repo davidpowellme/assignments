@@ -7,6 +7,7 @@ $body-font: "source-sans-pro",sans-serif;
 $border: 2px solid #5a2a24;
 $open: #bada55;
 $primary-color: #5a2a24;
+$secondary-color: #b1c0f2;
 $tot-width: 100%;
 $num-col: 12;
 $gut-width: 2%;
@@ -185,6 +186,7 @@ SPECIALS
 
 	.spec-item {
 		border: $border;
+		margin-bottom: 1rem;
 		overflow: hidden;
 		padding: 0.5rem;
 
@@ -196,6 +198,37 @@ SPECIALS
 
 	}
 }
+
+/*
+==============
+XTRA
+==============
+*/
+
+.xtra {
+	background: $secondary-color;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	padding: 4rem 1rem;
+
+	i {
+		font-size: 2rem;
+	}
+
+	article:first-child {
+		margin-bottom: 1rem;
+	}
+}
+/*
+==============
+HOURS
+==============
+*/
+.hours {
+	background: #d8d2b0;
+}
+
+
 
 
 /*
