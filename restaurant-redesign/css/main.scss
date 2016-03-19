@@ -2,6 +2,80 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-.space {
-	height: 600px;
+$body-font: "source-sans-pro",sans-serif;
+$open: #bada55;
+$primary-color: #5a2a24;
+
+html {
+	font-size: 16px;
+	color: $primary-color;
+}
+
+h1,
+.logo {
+	font-size: 3rem;
+	font-weight: 600;
+}
+h2 {
+	font-size: 1.5rem;
+	font-style: italic;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+.site-header {
+
+	.logo {
+		border: 2px solid $primary-color;
+		color: $primary-color;
+		display: block;
+		margin: 0.5rem auto;
+		padding: 0.5rem 1rem;
+		text-align: center;
+		text-decoration: none;
+		width: 20rem;
+	}
+	.open-close {
+		margin-bottom: 0.5rem;
+		text-align: center;
+
+		.dot {
+			background: $open;
+			border-radius: 50%;
+			display: inline-block;
+			height: 0.75rem;
+			width: 0.75rem;
+			vertical-align: middle;
+		}
+		span {
+			text-decoration: underline;
+
+		}
+	}
+	nav {
+		border-top: 2px solid $primary-color;
+		border-bottom: 2px solid $primary-color;
+		overflow: hidden;
+		
+		ul {
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+
+			li {
+				display: block;
+				float: left;
+				list-style: none;
+				padding: 0.5rem 0;
+				text-align: center;
+				width: 33%;
+
+				a {
+					color: $primary-color;
+					text-decoration: none;
+				}
+			}
+		}	
+	}
 }
