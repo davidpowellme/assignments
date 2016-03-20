@@ -39,7 +39,7 @@ img {
 
 h1,
 .logo {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 600;
 	text-align: center;
 }
@@ -66,11 +66,11 @@ HEADER
 		border: $border;
 		color: $primary-color;
 		display: block;
-		margin: 0 auto;
-		padding: 0.5rem 1rem;
+		margin: 0.25rem auto;
+		padding: 0.25rem 0.5rem;
 		text-align: center;
 		text-decoration: none;
-		width: 23rem;
+		width: 20rem;
 	}
 
 	nav.mainnav {
@@ -102,8 +102,17 @@ HEADER
 		nav.mainnav {
 		border-top: $border;
 		border-bottom: $border;
+		}
 	}
-}
+
+	@media (min-width: 900px) {
+		.logo {
+			margin: 0.25rem;
+		}
+		.mainnav {
+			padding: 0.8rem 0.25rem 0 0;
+		}
+	}
 }
 
 /*
@@ -125,7 +134,7 @@ BANNER
 		background: #000;
 		height: 100%;
 		left: 0;
-		opacity: 0.5;
+		opacity: 0.4;
 		position: absolute;
 		top: 0;
 		width: 100%;
@@ -143,7 +152,7 @@ BANNER
 
 @media (min-width: 900px) {
 	.banner {
-		padding: 7rem;
+		padding: 12rem;
 	}
 }
 
