@@ -58,39 +58,22 @@ HEADER
 
 .site-header {
 	background: $bg-color;
+	line-height: 1.4;
+	overflow: hidden;
 	width: 100%;
 
 	.logo {
 		border: $border;
 		color: $primary-color;
 		display: block;
-		margin: 0.5rem auto 1rem auto;
+		margin: 0 auto;
 		padding: 0.5rem 1rem;
 		text-align: center;
 		text-decoration: none;
 		width: 23rem;
 	}
-	.open-close {
-		display: none;
-		margin-bottom: 0.5rem;
-		text-align: center;
 
-		.dot {
-			background: $open;
-			border-radius: 50%;
-			display: inline-block;
-			height: 0.75rem;
-			width: 0.75rem;
-			vertical-align: middle;
-		}
-		span {
-			text-decoration: underline;
-
-		}
-	}
-	nav {
-		border-top: $border;
-		border-bottom: $border;
+	nav.mainnav {
 		font-size: 1.25rem;
 		overflow: hidden;
 		
@@ -114,6 +97,13 @@ HEADER
 			}
 		}	
 	}
+
+	@media (max-width: 650px) {
+		nav.mainnav {
+		border-top: $border;
+		border-bottom: $border;
+	}
+}
 }
 
 /*
@@ -157,7 +147,8 @@ OPEN/CLOSE
 ==============
 */
 
-.open-close {
+.open-close,
+.open-close-top {
 		border-top: $border;
 		border-bottom: $border;
 		margin-bottom: 0.5rem;
@@ -178,6 +169,19 @@ OPEN/CLOSE
 			text-decoration: underline;
 		}
 }
+.open-close-top {
+	display: none;
+}
+
+@media (min-width: 650px) {
+			.open-close {
+				display: none;
+			}
+			.open-close-top {
+				display: block;
+			}
+		}
+
 /*
 ==============
 SPECIALS
@@ -387,7 +391,9 @@ GRID
   @include grid(12);
 }
 
-@media (min-width: 672px) {
+//medium screen
+
+@media (min-width: 650px) {
   .col-md-1 {
     @include grid(1);
   }
@@ -426,6 +432,8 @@ GRID
   }
 } 
 
+//large screen
+
 @media (min-width: 900px) {
   .col-lg-1 {
     @include grid(1);
@@ -462,6 +470,12 @@ GRID
   }
   .col-lg-12 {
     @include grid(12);
+  }
+  .mainnav,
+  .open-close-top {
+	border: none;
+	border-top: none;
+	border-bottom: none;
   }
 }
 
