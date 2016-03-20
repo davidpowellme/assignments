@@ -115,7 +115,7 @@ BANNER
 .banner {
 	background: url(/images/hero-pasta.jpg) 0 0 no-repeat;
 	background-size: cover;
-	padding: 3rem 0;
+	padding: 5rem 0;
 	position: relative;
 	width: 100%;
 	z-index: -1;
@@ -138,6 +138,12 @@ BANNER
 		opacity: 1;
 		text-align: center;
 		z-index: 1;
+	}
+}
+
+@media (min-width: 900px) {
+	.banner {
+		padding: 7rem;
 	}
 }
 
@@ -171,6 +177,7 @@ OPEN/CLOSE
 }
 .open-close-top {
 	display: none;
+	margin-bottom: 0;
 }
 
 @media (min-width: 650px) {
@@ -179,8 +186,16 @@ OPEN/CLOSE
 			}
 			.open-close-top {
 				display: block;
+
 			}
 		}
+@media (min-width: 900px) {
+	.open-close-top {
+		border: none;
+		border-top: none;
+		border-bottom: none;
+	}
+}
 
 /*
 ==============
@@ -470,12 +485,6 @@ GRID
   }
   .col-lg-12 {
     @include grid(12);
-  }
-  .mainnav,
-  .open-close-top {
-	border: none;
-	border-top: none;
-	border-bottom: none;
   }
 }
 
