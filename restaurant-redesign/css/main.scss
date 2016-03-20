@@ -208,16 +208,17 @@ XTRA
 .xtra {
 	background: $secondary-color;
 	font-size: 1.5rem;
-	margin: 1rem 0;
 	padding: 4rem 1rem;
 
 	i {
 		font-size: 2rem;
 	}
 
-	article:first-child {
-		margin-bottom: 1rem;
+	article {
+		padding: 1rem;
 	}
+
+	
 }
 /*
 ==============
@@ -226,8 +227,34 @@ HOURS
 */
 .hours {
 	background: #d8d2b0;
+	padding: 1rem;
 }
 
+/*
+==============
+LOCATION
+==============
+*/
+
+.location {
+	padding: 1rem;
+
+	iframe {
+		max-width: 100%;
+	}
+}
+
+/*
+==============
+FOOTER
+==============
+*/
+
+footer {
+	border-top: $border;
+	padding: 0.5rem;
+
+}
 
 
 
