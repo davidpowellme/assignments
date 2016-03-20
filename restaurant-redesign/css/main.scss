@@ -10,7 +10,7 @@ $primary-color: #5a2a24;
 $secondary-color: #b1c0f2;
 $tot-width: 100%;
 $num-col: 12;
-$gut-width: 2%;
+$gut-width: 0;
 
 $ind-col-width: (($tot-width) - ($gut-width) * ($num-col - 1)) / $num-col;
 
@@ -31,6 +31,10 @@ html {
 
 img {
 	max-width: 100%;
+}
+
+.wrapper {
+	overflow: hidden;
 }
 
 h1,
@@ -208,17 +212,35 @@ XTRA
 .xtra {
 	background: $secondary-color;
 	font-size: 1.5rem;
+	overflow: hidden;
 	padding: 4rem 1rem;
 
-	i {
-		font-size: 2rem;
+	.wine {
+		display: inline-block;
+		margin: 0 auto;
+		vertical-align: middle;
+		width: 40px;
+		
+	}
+
+	.card {
+		
+		display: inline-block;
+		margin: 0 auto;
+		vertical-align: middle;
+		width: 80px;
+		
+	}
+	
+	p {
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 	article {
+		overflow: hidden;
 		padding: 1rem;
-	}
-
-	
+	}	
 }
 /*
 ==============
@@ -252,6 +274,7 @@ MENU
 */
  .menu {
  	margin: 0 auto;
+ 	overflow: hidden;
 	width: 90%;
 
  	h1 {
@@ -275,6 +298,10 @@ MENU
 			font-weight: bold;
 		}
 
+		.catering {
+			border: $border;
+			padding: 1rem;
+		}
  		.more {
  			font-style: italic;
  			font-weight: normal;
