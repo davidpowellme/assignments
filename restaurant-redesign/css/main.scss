@@ -246,6 +246,57 @@ LOCATION
 
 /*
 ==============
+MENU
+==============
+*/
+ .menu {
+ 	margin: 0 auto;
+	width: 90%;
+
+ 	h1 {
+ 		text-align: left;
+ 	}
+	
+	h2 {
+		overflow: hidden;
+
+ 		.price {
+ 			float: right;
+ 			text-align: center;
+ 		}
+ 	}
+
+
+ 	section {
+ 		padding: 1rem;
+		
+		p {
+			font-weight: bold;
+		}
+
+ 		.more {
+ 			font-style: italic;
+ 			font-weight: normal;
+ 		}
+
+ 		.intro {
+ 			font-size: 1.25rem;
+ 			font-weight: normal;
+			line-height: 1.4;
+ 		}
+ 	}
+
+ 	div {
+ 		border-bottom: 10px solid $primary-color;
+ 		border-bottom-style: double;
+ 		margin: 0 auto;
+ 		width: 90%;
+ 	}
+ }
+
+
+/*
+==============
 FOOTER
 ==============
 */
