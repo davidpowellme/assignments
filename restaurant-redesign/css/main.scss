@@ -222,22 +222,32 @@ SPECIALS
 ==============
 */
 .specials {
-	margin: 0 auto;
+	margin: 1rem auto 3rem auto;
 	overflow: hidden;
 	width: 95%;
 
 	.spec-item {
 		border: $border;
-		margin-bottom: 1rem;
+		margin: 0 auto 2rem auto;
 		overflow: hidden;
 		padding: 0.5rem;
 
 		.spec-img {
-			background: url(../images/creme.jpg) 0 0 no-repeat;
-			background-size: cover;
 			padding: 3rem;
 		}
 
+	}
+}
+
+@media (min-width: 650px) {
+	.specials {
+		width: 80%;
+	}
+}
+
+@media (min-width: 900px) {
+	.specials {
+		width: 60%;
 	}
 }
 
@@ -362,6 +372,9 @@ MENU
  	section {
  		padding: 1rem;
 		
+		article:first-child {
+			border-bottom: 4px dotted black;
+		}
 		p {
 			font-weight: bold;
 		}
