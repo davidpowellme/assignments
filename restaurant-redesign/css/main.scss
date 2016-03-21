@@ -152,7 +152,7 @@ BANNER
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 5rem;
 	}
 
 	h2 {
@@ -162,7 +162,7 @@ BANNER
 
 @media (min-width: 900px) {
 	.banner {
-		padding: 12rem;
+		padding: 15rem;
 	}
 }
 
@@ -234,6 +234,26 @@ SPECIALS
 
 		.spec-img {
 			padding: 3rem;
+		}
+
+		.info {
+			overflow: hidden;
+			padding: 0 1rem;
+			
+			h2 {
+				font-size: 1.75rem;
+				overflow: hidden;
+				padding: 0.5rem;
+
+				span {
+					float: right;
+					text-align: center;
+				}
+			}
+			p {
+				font-size: 1.5rem;
+				padding: 0.5rem;
+			}
 		}
 
 	}
