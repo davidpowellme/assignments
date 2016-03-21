@@ -37,8 +37,7 @@ img {
 	overflow: hidden;
 }
 
-h1,
-.logo {
+h1 {
 	font-size: 2.5rem;
 	font-weight: 600;
 	text-align: center;
@@ -66,11 +65,13 @@ HEADER
 		border: $border;
 		color: $primary-color;
 		display: block;
-		margin: 0.25rem auto;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0.5rem auto;
 		padding: 0.25rem 0.5rem;
 		text-align: center;
 		text-decoration: none;
-		width: 20rem;
+		width: 15rem;
 	}
 
 	nav.mainnav {
@@ -110,7 +111,7 @@ HEADER
 			margin: 0.25rem;
 		}
 		.mainnav {
-			padding: 0.8rem 0.25rem 0 0;
+			padding: 0.5rem 0.25rem;
 		}
 	}
 }
@@ -330,6 +331,7 @@ LOCATION
 	}
 	iframe {
 		max-width: 100%;
+		padding: 1rem;
 	}
 }
 
@@ -341,7 +343,7 @@ MENU
  .menu {
  	margin: 0 auto;
  	overflow: hidden;
-	width: 90%;
+	width: 95%;
 
  	h1 {
  		text-align: left;
@@ -363,7 +365,19 @@ MENU
 		p {
 			font-weight: bold;
 		}
+		.number {
+			font-size: 2rem;
+			font-weight: 700;
+			margin: 2rem 0;
+			text-align: center;
+		}
 
+		.intro,
+		.catering {
+			margin: 0 auto;
+			max-width: 30rem;
+			width: 100%;
+		}
 		.catering {
 			border: $border;
 			padding: 1rem;
@@ -377,16 +391,26 @@ MENU
  			font-size: 1.25rem;
  			font-weight: normal;
 			line-height: 1.4;
+			margin-top: 3rem;
  		}
  	}
+ }	
+	
+	@media (min-width: 650px) {
+		.menu-border:last-child {
+			border-left: 10px solid $primary-color;
+	 		border-left-style: double;
+	 		margin: 2rem 0;
+		}
+	}
 
- 	div {
- 		border-bottom: 10px solid $primary-color;
- 		border-bottom-style: double;
- 		margin: 0 auto;
- 		width: 90%;
- 	}
- }
+	@media (min-width: 900px) {
+	 	.menu-border {
+	 			border-left: 10px solid $primary-color;
+	 			border-left-style: double;
+	 			margin: 2rem 0;
+	 	}
+	}
 
 
 /*
