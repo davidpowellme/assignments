@@ -2,11 +2,11 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$bg-color: #fff;
+$bg-color: #FFFEFB;
 $body-font: "source-sans-pro",sans-serif;
-$border: 2px solid #5a2a24;
-$open: #bada55;
-$primary-color: #5a2a24;
+$border: 2px solid #864616;
+$open: #94E846;
+$primary-color: #6B3710;
 $secondary-color: #b1c0f2;
 $tot-width: 100%;
 $num-col: 12;
@@ -28,6 +28,9 @@ html {
 	font-size: 16px;
 	color: $primary-color;
 }
+body {
+	background: $bg-color;
+}
 
 img {
 	max-width: 100%;
@@ -35,10 +38,10 @@ img {
 
 a {
 	color: $primary-color;
-	font-weight: 700;
+	font-weight: 600;
 
 	&:hover {
-		color: #a71817;
+		color: lighten($primary-color, 5%);
 	}
 }
 .wrapper {
@@ -46,6 +49,7 @@ a {
 }
 
 h1 {
+	color: $primary-color;
 	font-size: 2.5rem;
 	font-weight: 600;
 	text-align: center;
@@ -54,6 +58,7 @@ h2 {
 	font-size: 1.3rem;
 	font-style: italic;
 	font-weight: 400;
+	margin-top: 2rem;
 	text-transform: uppercase;
 }
 
@@ -105,7 +110,7 @@ HEADER
 					text-decoration: none;
 
 					&:hover {
-						color: #a71817;
+						color: lighten($primary-color, 5%);
 						text-decoration: underline;
 					}
 				}
@@ -146,7 +151,7 @@ BANNER
 	
 	&:after {
 		content: " ";
-		background: #000;
+		background: #3C1F09;
 		height: 100%;
 		left: 0;
 		opacity: 0.4;
@@ -158,7 +163,7 @@ BANNER
 
 	h1,
 	h2 {
-		color: #fff;
+		color: $bg-color;
 		opacity: 1;
 		text-align: center;
 		text-shadow: $primary-color 2px 2px;
@@ -273,7 +278,7 @@ SPECIALS
 				}
 			}
 			p {
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 				padding: 0.5rem;
 			}
 		}
@@ -282,16 +287,15 @@ SPECIALS
 			background: $primary-color;
 			border-top: $border;
 			clear: both;
-			color: #fff;
-			font-size: 1.5rem;
+			color: $bg-color;
+			font-size: 1.25rem;
 			margin: 0;
-			//padding: 0.5rem;
 			text-align: center;
 			text-decoration: none;
 
 			&:hover {
-				background: $bg-color;
-				color: #a71817;
+				background: lighten($primary-color, 5%);
+				color: $bg-color;
 				text-decoration: none;
 			}
 		}	
@@ -318,7 +322,7 @@ XTRA
 */
 
 .xtra {
-	background: $secondary-color;
+	background: #DBDFEC;
 	font-size: 1.5rem;
 	overflow: hidden;
 	padding: 4.375rem 1rem;
@@ -338,7 +342,7 @@ XTRA
 	}
 	
 	p {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		padding: 0.5rem;
 		text-align: center;
 		
@@ -374,11 +378,12 @@ HOURS
 	padding: 1rem;
 	
 	h1 {
+		color: $primary-color;
 		margin-top: 4rem;
 	}
 
 	p {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		line-height: 1.6;
 		text-align: center;
 
@@ -408,13 +413,17 @@ LOCATION
 
 
 	p {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		line-height: 1.6;
 		padding: 0.5rem;
 		text-align: center;
 
 		a {
-			font-size: 1.75rem;
+			font-size: 1.5rem;
+
+			&:hover {
+				color: lighten($primary-color, 5%);
+			}
 		}
 	}
 	iframe {
@@ -431,9 +440,10 @@ MENU
  .menu {
  	margin: 0 auto;
  	overflow: hidden;
-	width: 95%;
+	//width: 95%;
 
  	h1 {
+ 		color: #E88241;
  		text-align: left;
  	}
 	
@@ -449,40 +459,43 @@ MENU
 
  	section {
  		padding: 2.5rem;
+
+ 		.intro-box {
+ 			background: #d8d2b0;
+ 			margin: 3.5rem auto 0 auto;
+ 			max-width: 34rem;
+ 			padding: 2rem;
+ 		}
 		
 		article:first-child {
-			border-bottom: 4px dotted black;
+			border-bottom: 4px dotted $primary-color;
 		}
 		p {
 			font-weight: bold;
 		}
 		.number {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			font-weight: 700;
-			margin: 2rem 0;
-			text-align: center;
+			margin: 2rem auto;
+			max-width: 30rem;
 		}
-
+		
 		.intro,
 		.catering {
 			margin: 0 auto;
 			max-width: 30rem;
 			width: 100%;
 		}
-		.catering {
-			border: $border;
-			padding: 1rem;
-		}
+
  		.more {
  			font-style: italic;
  			font-weight: normal;
  		}
 
  		.intro {
- 			font-size: 1.25rem;
+ 			font-size: 1.1rem;
  			font-weight: normal;
 			line-height: 1.4;
-			margin-top: 3rem;
  		}
  	}
  }	
@@ -523,6 +536,10 @@ footer {
 		float: right;
 		font-size: 2rem;
 		padding-right: 1rem;
+
+		a:hover {
+			color: lighten($primary-color, 5%);
+		}
 	}
 }
 
